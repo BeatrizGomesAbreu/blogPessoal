@@ -1,0 +1,9 @@
+#img-bg{
+    background-image: url('https://blog.portalpos.com.br/app/uploads/2021/06/tech-recruiter.jpg');
+
+    min-height: 695px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

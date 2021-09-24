@@ -1,0 +1,9 @@
+#img-bg{
+    background-image: url('https://st4.depositphotos.com/13194036/31415/i/600/depositphotos_314156940-stock-photo-selective-focus-of-notebook-pen.jpg');
+
+    min-height: 695px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
