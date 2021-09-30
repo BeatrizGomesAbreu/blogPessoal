@@ -16,11 +16,23 @@ ul.social-network li{
 }
 
 .fa-facebook-square:hover{
-    color: #3b5998;
+    color: black;
 }
 .fa-instagram:hover{
-    color: #c13584;
+    color: black;
 }
 .fa-linkedin-square:hover{
-    color: #0072b1;
+    color: black;
+}
+
+.verde1{
+    background-color: #76704c;
+}
+
+.verde2{
+    background-color: #545e46;
+}
+
+.verde3{
+    background-color: #1f2d16;
 }
