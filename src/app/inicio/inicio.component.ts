@@ -1,4 +1,3 @@
-import { temporaryAllocator } from '@angular/compiler/src/render3/view/util';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
@@ -35,6 +34,8 @@ export class InicioComponent implements OnInit {
 
   ngOnInit(){
 
+    window.scroll(0,0)
+
     if(environment.token == ''){
       alert ('Sua seção expirou, faça o login novamente.')
       this.router.navigate(['/entrar'])
@@ -57,7 +58,7 @@ export class InicioComponent implements OnInit {
   }
 
   getAllPostagens(){
-    this.postagemService.getAllPostagem().subscribe((resp: Postagem[])=> {
+    this.postagemService.getAllpostagens().subscribe((resp: Postagem[])=> {
       this.listaPostagem = resp
     })
   }
@@ -75,7 +76,7 @@ export class InicioComponent implements OnInit {
     this.user.id = this.idUser
     this.postagem.usuario = this.user
 
-    this.postagemService.postpostagem(this.postagem).subscribe((resp: Postagem)=>{
+    this.postagemService.postPostagem(this.postagem).subscribe((resp: Postagem)=>{
       this.postagem = resp
       alert('Postagem realizada com sucesso!')
       this.postagem = new Postagem()
